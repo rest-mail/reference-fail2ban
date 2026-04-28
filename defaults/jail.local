@@ -1,0 +1,22 @@
+# reference-fail2ban baked-in defaults.
+#
+# Generic, neutral defaults only — no jails enabled here. Mount your own
+# jail definitions at /etc/fail2ban-overlay/ (see README). The entrypoint
+# copies them into /etc/fail2ban/jail.d/ which fail2ban natively reads.
+
+[DEFAULT]
+# iptables-based banning works with the iptables/ip6tables packages we ship.
+banaction  = iptables-multiport
+banaction_allports = iptables-allports
+
+# Sensible-but-conservative defaults; jail definitions can override.
+bantime    = 1800
+findtime   = 600
+maxretry   = 5
+
+# Don't email anyone by default — image has no MTA and no idea who to mail.
+destemail  =
+sender     =
+mta        =
+
+# Log everything to stdout/stderr (set on the command line in entrypoint).
