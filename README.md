@@ -116,6 +116,6 @@ MIT.
 
 ## See also
 
-- [`rest-mail/conventions`](https://github.com/rest-mail/conventions) — the contract every `reference-*` image follows (overlay paths, env var naming, signal handling, calver tagging)
+- [`rest-mail/conventions`](https://github.com/rest-mail/conventions) — the contract every `reference-*` image follows (overlay paths, env var naming, signal handling, SemVer tagging)
 - [`rest-mail/reference-dnsmasq`](https://github.com/rest-mail/reference-dnsmasq) — sister image following the same pattern
 - [`rest-mail/testbed`](https://github.com/rest-mail/testbed) — where this image gets composed alongside the reference mail-server pair
