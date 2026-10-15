@@ -7,8 +7,8 @@ Meant to be useful as a standalone ban daemon or as the IDS/IPS layer of a large
 ## Image
 
 ```
-ghcr.io/rest-mail/reference-fail2ban:latest          # always newest
-ghcr.io/rest-mail/reference-fail2ban:YYYY.MM.DD      # immutable calver tag
+ghcr.io/rest-mail/reference-fail2ban:latest          # newest master build; pin a release instead
+ghcr.io/rest-mail/reference-fail2ban:X.Y.Z          # a release: git tag vX.Y.Z publishes it
 ```
 
 ## Quick start (standalone)
