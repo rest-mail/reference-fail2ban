@@ -7,7 +7,7 @@ Meant to be useful as a standalone ban daemon or as the IDS/IPS layer of a large
 ## Image
 
 ```
-ghcr.io/rest-mail/reference-fail2ban:latest          # newest master build; pin a release instead
+ghcr.io/rest-mail/reference-fail2ban:latest          # newest main build; pin a release instead
 ghcr.io/rest-mail/reference-fail2ban:X.Y.Z          # a release: git tag vX.Y.Z publishes it
 ```
 
@@ -98,7 +98,7 @@ Runs as `root` inside the container (required for iptables manipulation). `--cap
 ├── defaults/
 │   └── jail.local           # baked-in defaults; overlay overrides
 ├── .github/workflows/
-│   └── build.yml            # multi-arch GHCR publish on push to master
+│   └── build.yml            # multi-arch GHCR publish on push to main
 └── tests/
     └── smoke.sh             # spin up + fail2ban-client status + verify
 ```
